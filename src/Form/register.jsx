@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 
 //const history = useHistory()
-export class Register extends React.Component { 
+class Register extends React.Component { 
   constructor(props) {
     super(props);
     this.onChangeUsername = this.onChangeUsername.bind(this);
@@ -161,3 +161,6 @@ this.setState({
     );
   }
 }
+
+
+export default  withRouter(Register);

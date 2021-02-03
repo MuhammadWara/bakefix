@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Redirect } from "react-router-dom";
+import { withRouter ,Redirect} from "react-router-dom";
 import firebase from 'firebase';
 import Home from "../components/Home/Home";
 
@@ -8,11 +8,12 @@ import {BrowserRouter as Router, Route,Link, Switch } from 'react-router-dom'
 import { useHistory } from "react-router-dom";
 
 
+//const  history
+class Login extends React.Component {
 
-export class Login extends React.Component {
 
 
-
+  
   
   constructor(props) {
     super(props);
@@ -25,6 +26,7 @@ export class Login extends React.Component {
      isloggedIn: false
     }
 
+     //history = useHistory();
     
   }
 
@@ -64,15 +66,19 @@ firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password
   
     console.log(res)
    alert("successful")
+    
   //  let history = useHistory();
-  //  if(this.state.isloggedIn === true){
-  //   console.log("ruko");
-  //   return (<Redirect to="/Home" />);
-  // }else{
-  //   console.log("nin chala")
-  //   var Router = require('react-router');
-  //   history.pushState("MyName",'',"/Home");
-  // }
+   if(this.state.isloggedIn === true){
+    console.log("ruko");
+    return <Redirect to='/Custom'/>;  
+  }else{
+    debugger
+    console.log("nin chala")
+    console.log(">>>>>>>>>>",this.props)
+    this.props.history.push("/Custom")
+    // var Router = require('react-router');
+    // history.pushState("MyName",'',"/Home");
+  }
    //director();
    //const history = useHistory();
    //router.transitionTo('/Home')
@@ -132,3 +138,6 @@ firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password
     );
   }
 }
+
+
+export default  withRouter(Login);
