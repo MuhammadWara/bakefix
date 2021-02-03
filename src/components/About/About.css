@@ -1,0 +1,60 @@
+.imeg img{
+width: 100%;
+height: 20%;
+opacity: 80%;
+}
+.bd{
+    padding-top: 15%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.abt{
+    color: black !important;
+}
+.imageab1{
+    width: -1000px;
+height: -100px;
+margin-left: 200px;
+margin-top: 600px;}
+.au{
+text-align: center;
+font-size: 2.5em;
+font-style: oblique;
+font-display: block;
+color: blue;
+margin-top: -100px;
+}
+.ch{
+    color: red;
+
+}
+.ou{
+    
+    font-size: 2.5em;
+}
+.bb{
+    font-style: oblique;
+}
+.se{
+    color: black !important;
+}
+.tea{
+    color: black !important;
+}
+.ex{
+    color: black !important;
+    font-size: 3em;
+}
+.text8{
+    
+    color:white !important;
+    
+    font-size:2.5em;
+margin-top: -3em;
+
+    width: auto;
+    
+    
+
+}

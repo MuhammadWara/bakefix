@@ -1,0 +1,26 @@
+
+.logo img{
+   height: 20%;
+   width: 20%;
+   margin-top: -3%;
+   margin-bottom: -3%;
+   
+   }
+   nav{
+       background-color: black;
+   }
+.mynav{
+    color: white;
+    font-size: 100%;
+    
+}
+
+.mynav:hover{
+    color: deeppink;
+    border-bottom: solid deeppink;
+}
+
+.mynav:clicked + .mynav{
+    color: deeppink;
+    border-bottom: solid deeppink;
+}

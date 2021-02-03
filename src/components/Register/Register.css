@@ -1,0 +1,39 @@
+.me{
+    
+    font-size: 40px;
+    font-weight: bold;
+    font-style: oblique;
+    color: blue !important;
+}
+
+.in{
+    width: 500px;
+    margin-left: 17em;
+    height: 3em;
+
+}
+.pa{
+    text-decoration: black;
+    margin-left: 17em;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.rf{
+    color: white !important;
+    font-style: italic;
+    font-weight: bold;
+}
+.foregister{
+    color:black !important;
+    font-weight: bold;
+}
+.lo{
+    background-color: aqua !important;
+width: 500px;
+text-decoration: black;
+    margin-left: 17em;
+    font-weight: bolder;
+    font-style: oblique;
+    height: 3em;
+    
+}
